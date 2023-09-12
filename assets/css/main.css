@@ -2631,7 +2631,7 @@ input, select, textarea {
 			}
 
 /* Section/Article */
-
+			
 	section.special, article.special {
 		text-align: center;
 	}
@@ -3682,31 +3682,33 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		display: -moz-flex;
+		/* display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
-		width: calc(100% + 2em);
+		flex-wrap: wrap; */
+		/* padding: 5em 5em 3em 5em ; */
+		padding: 2.5em 0;
+		width: auto;
+		/* width: calc(100% + 2em); */
 		margin: 0 0 3em -2em;
 		text-align: center;
 	}
 
-		#footer > * {
-			width: calc(50% - 2em);
-			margin-left: 2em;
-		}
+		/* #footer > * {
+			width: auto;
+			margin-left: 0 auto;
+		} */
 
-		#footer .copyright {
+		/* #footer .copyright {
 			width: 100%;
 			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
 			text-align: center;
-		}
+		} */
 
 		@media screen and (max-width: 1280px) {
 
