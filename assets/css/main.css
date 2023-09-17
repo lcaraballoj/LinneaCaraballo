@@ -2906,6 +2906,10 @@ input, select, textarea {
 				background-color: #8cc9f0;
 			}
 
+			.projects li.style6 {
+				background-color: #c6afe0;
+			}
+
 			.projects li strong, .projects li b {
 				display: block;
 				font-size: 2em;
