@@ -2862,14 +2862,13 @@ input, select, textarea {
 /* Projects */
 
 	.projects {
-		/* display: -moz-flex;
+		display: -moz-flex;
 		display: -webkit-flex;
-		display: -ms-flex; */
+		display: -ms-flex;
 		display: flex;
-		/* width: 100%;  */
+		width: 100%; 
 		flex-wrap: wrap;
   		justify-content: center;
-		/* grid-template-columns: 33% 33% 33%; */
 		margin: 0 0 3em 0;
 		padding: 0;
 		list-style: none;
@@ -2877,9 +2876,9 @@ input, select, textarea {
 	}
 
 		.projects li {
-			/* -moz-flex: 1;
+			-moz-flex: 1;
 			-webkit-flex: 1;
-			-ms-flex: 1; */
+			-ms-flex: 1;
 			flex: 0 0 calc(33% - 20px);
 			padding: 1.5em;
 			color: #ffffff;
@@ -2919,16 +2918,6 @@ input, select, textarea {
 				letter-spacing: -0.025em;
 			}
 
-			.projects li:first-child {
-				border-top-left-radius: 8px;
-				border-bottom-left-radius: 8px;
-			}
-
-			.projects li:last-child {
-				border-top-right-radius: 8px;
-				border-bottom-right-radius: 8px;
-			}
-
 			.projects li .icon {
 				display: inline-block;
 			}
@@ -2955,7 +2944,7 @@ input, select, textarea {
 				margin: 0 auto 2em auto;
 			}
 
-				.projects li:first-child {
+				/* .projects li:first-child {
 					border-bottom-left-radius: 0;
 					border-top-right-radius: 8px;
 				}
@@ -2963,7 +2952,7 @@ input, select, textarea {
 				.projects li:last-child {
 					border-top-right-radius: 0;
 					border-bottom-left-radius: 8px;
-				}
+				} */
 
 				.projects li .icon:before {
 					font-size: 3.75rem;
@@ -3022,7 +3011,7 @@ input, select, textarea {
 			letter-spacing: -0.025em;
 		}
 
-		.papers li:first-child {
+		/* .papers li:first-child {
 			border-top-left-radius: 8px;
 			border-bottom-left-radius: 8px;
 		}
@@ -3030,7 +3019,7 @@ input, select, textarea {
 		.papers li:last-child {
 			border-top-right-radius: 8px;
 			border-bottom-right-radius: 8px;
-		}
+		} */
 
 		.papers li .icon {
 			display: inline-block;
@@ -3056,17 +3045,7 @@ input, select, textarea {
 			width: 20em;
 			max-width: 100%;
 			margin: 0 auto 2em auto;
-		}
-
-			.papers li:first-child {
-				border-bottom-left-radius: 0;
-				border-top-right-radius: 8px;
-			}
-
-			.papers li:last-child {
-				border-top-right-radius: 0;
-				border-bottom-left-radius: 8px;
-			}
+		}s
 
 			.papers li .icon:before {
 				font-size: 3.75rem;
