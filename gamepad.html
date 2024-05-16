@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Linnea Caraballo Arduino Gamepad</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
+					<h1><a href="https://github.com/lcaraballoj/Arduino-Gamepad" target="_blank">Arduino Gamepad</a></h1>
+					<p>
+						The Arduino Gamepad was created to teach gaming design and development students about soldering and electronics. What started off as a very involved and complicated
+                        process with little success turned into one of the most workshops with a high success rate.
+					</p>
+						
+					<!-- <br />
+					built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>. -->
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html#intro" class="active">Home</a></li>
+						<li><a href="#prototype">Prototypes</a></li>
+						<li><a href="#final">Final Product</a></li>
+                        <li><a href="#code">Code</a></li>
+						<li><a href="#footer">Contact</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+						<section class="main special">
+							<ul class="papers">
+								<li>
+									<!-- <span class="icon solid fa-code-branch"></span> -->
+									<header class="major">
+										<h2 id="prototype">Prototypes</h2>
+									</header>
+										<section class="section-left">
+											<h2>Prototype 1</h2>
+                                            <p><font color="black">
+                                                This is an image of the first prototype of the gamepad. It used a stripboard, but the buttons were much lower than the joystick
+                                                and we had to cut each wire and strip the wires to an appropriate length. 
+                                            </font></p>
+											<img src="images/gamepad1.jpeg" alt="A brown rectangular board with a joystick on the left, arduino in the middle, and buttons on the right. There are red and black wires connecting the components."
+											
+										</section>
+										<section class="section-right">
+											<h2>Prototype 2</h2>
+												<p><font color="black">
+													Here we were able to improve on the position of the buttons. But doing so required the use of two strip boards and more wires. This was the product used for the first workshop.
+                                                    To prepare we had to custom cut and strip every wire for about 10 students and had to custom cut and strip the stripboards. The success rate was low since short circuiting the wires
+                                                    when soldering was very easy to do based on the layout. Overall this workshop did run smoothly. 
+												</font></p>
+                                                <img src="images/gamepad2.1.jpeg" alt="Image of a gamepad prototype. On the right is a joystick that is attached to a brown board with red and black wires and an Arduino. Floating above with wires
+                                                is a smaller brown board with red and black wires attaching it to the bigger board and buttons.">
+                                                <img src="images/gamepad2.2.jpeg" alt="Image of a gamepad. There is a wooden case covering the components.">
+										</section>
+								</li>
+								
+								<li>
+									<!-- <span class="icon solid fa-code-branch"></span> -->
+									<header class="major">
+										<h2 id="final">Final Product</h2>
+									</header>
+									<p><font color="black">
+										Determined to improve on both the Arduino Gamepad itself and the workshop I began experimenting with <a href="https://github.com/lcaraballoj/Eagle-PCBs">custom PCBs</a>. After creating various tests
+                                        and running workshops with these PCBs, I felt confident in tackling the gamepad again. We created two PCBs, one for the Arduino and joystick and one for the buttons. We used extending header pins
+                                        to attach the two PCBs. Overall this workshop ran extremely well and every student who came was able to successfully make their own Arduino Gamepad. The one snag was the wiring between the button of 
+                                        joystick button was incomplete, but once that was fixed we had a complete Arduino gamepad workshop that could be continuously run.
+									</font></p>
+									<section class="section-left">
+										<h2>PCB Boards</h2>
+											<p>
+												<img src="images/gamepad3.1.jpeg" alt="Two red boards. The big board has an outline for the joystick and the small board has an outline for the buttons.">
+											</p>						
+									</section>
+									<section class="section-right">
+											<h2>Final Product</h2>
+											<img src="images/gamepad3.2.jpeg" alt="The gamepad with the custom red PCBs. It has a clear case making the gamepad a rectangular shape."/>											
+									</section>
+								</li>
+
+                                <li>
+                                    <header class="major">
+                                        <h2 id="code">Code</h2>
+                                    </header>
+                                    <p><font color="black">
+                                        We needed to use a Pro Micro Arduino in order to use the buttons as keyboard keys, w, a, s, d, and to use the joystick as a mouse with the press of the joystick simulating a right click.
+                                        We also needed two different libraries <a href="https://www.arduino.cc/reference/en/libraries/keyboard/">keyboard</a> and <a href="https://www.arduino.cc/reference/en/libraries/mouse/">mouse</a>. 
+                                        Because we were using a custom PCB all the joystick values and button values for the Arduino were the same. This resulted in universal code that could be shared and flashed on the gamepads after assembly.
+                                    </font></p>                                                                     
+                                    <section class="section-left">
+										<h2>Code</h2>
+											<p>
+												<img src="images/arduino.png" alt="A screenshot of Arduino code.">
+											</p>						
+									</section>
+                                </li>
+						</section>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<!-- <section>
+						<h2>Linnea Caraballo</h2>
+						<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn More</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Linnea Caraballo</h2>
+						<dl class="alt">
+							<dt>Phone</dt>
+							<dd>(475) 239-8208</dd>
+							<dt>Email</dt>
+							<dd><a href="mailto:lcaraballo@wesleyan.edu">lcaraballo@wesleyan.edu</a></dd>
+						</dl>
+						<ul class="icons">
+							<li><a href="https://github.com/lcaraballoj" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/linnea-caraballo" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</section>
+					<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
+					<ul class="icons">
+						<li><a href="https://github.com/lcaraballoj" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/linnea-caraballo" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
